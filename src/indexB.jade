@@ -1,0 +1,50 @@
+extend layout
+block append foot
+    .row
+        .twelve.columns.portfolioBar
+            .container
+                .row
+                    h1.margin-less About Us
+                    p Why our clients love to work with us
+                .row
+                    .six.columns
+                        img.u-max-full-width(src="images/aboutus/1.png")
+                    .six.columns
+                        p Shoulder bressaola sausage consequat ground round duis excepteur exercitation lanjaeger sunt. Duis officia sed frankfurter dolore pastrami tenderloin.
+
+                        p When an unknown printer took a gallery of type and scrambled it to make a type specimen book. It has survived not only fuve centuries.
+
+                 mixin tiny-square(imagen, título, texto)
+                     .four.columns
+                         img.u-max-full-width(src="images/home/#{imagen}.png")
+                         h5 #{título}
+                         p #{texto}
+                .row
+                    +tiny-square("icon1", "Incredibly Responsive", "Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round")
+                    +tiny-square("icon2", "Superior Typography", "Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison")
+                    +tiny-square("icon3", "Swift Page Builder", "Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.")
+            .row
+                .twelve.columns.portfolioBar
+                    .container
+                        .row
+                            .twelve.columns
+                                .six.columns.margin-less
+                                    h5 Triangle Corporate Template
+                                    p A responsive, retina-ready and wide multipurpose template.
+                                button.two.columns TAKE A TOUR
+                                img.four.columns(src="images/home/tour-icon2.png")
+
+             .row
+                .offset-by-four.four.columns.center
+                    h3 Meet the team
+                    p Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                mixin square-about(imagen, nombre, rol)
+                    .three.columns
+                        img.u-max-full-width(src="images/aboutus/#{imagen}.jpg")
+                        h5 #{nombre}
+                        p #{rol}
+            .row
+                +square-about(4,"John Doe", "Ceo Developer")
+                +square-about(3,"John Doe", "Ceo Developer")
+                +square-about(2,"John Doe", "Ceo Developer")
+                +square-about(1,"John Doe", "Ceo Developer")

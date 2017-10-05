@@ -1,0 +1,56 @@
+extend layout
+block append foot
+     .row
+        .twelve.columns.portfolioBar
+            .container
+                h1.margin-less Portfolio
+                p Be creative
+        .container
+         .row
+            .offset-by-two.eight.columns
+                ul.downBar
+                    li
+                        a All
+                    li
+                        a Branded
+                    li
+                        a Design
+                    li
+                        a Folio
+                    li
+                        a Logos
+                    li
+                        a Mobile
+                    li
+                        a Mockup
+
+            mixin square(imagen, texto)
+                .three.columns
+                    img.u-max-full-width(src="images/portfolio/#{imagen}.jpg")
+                    p #{texto}
+            .row
+                +square(1, "Sailing vivamus")
+                +square(2, "Sailing vivamus")
+                +square(3, "Sailing vivamus")
+                +square(4, "Sailing vivamus")
+            .row
+                +square(5, "Sailing vivamus")
+                +square(6, "Sailing vivamus")
+                +square(7, "Sailing vivamus")
+                +square(8, "Sailing vivamus")
+            .row
+                +square(9, "Sailing vivamus")
+                +square(10, "Sailing vivamus")
+                +square(11, "Sailing vivamus")
+                +square(12, "Sailing vivamus")
+            .row
+                +square(13, "Sailing vivamus")
+                +square(14, "Sailing vivamus")
+                +square(15, "Sailing vivamus")
+                +square(16, "Sailing vivamus")
+
+        script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js")
+        script(type="text/javascript" src="../src/js/app.js")
+
+
+
